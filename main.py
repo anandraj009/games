@@ -14,7 +14,7 @@ import sys
 logging.basicConfig(level=logging.INFO)
 
 
-API_TOKEN = '6841215414:AAGdEOTpACfbUrUAxfYzJ38HxyZTmFP3Nns'
+API_TOKEN = '7330160795:AAGUACDUOyeOPw6d5pel2rNhSUhih259wWY'
 
 AUTHORIZED_USERS = {}
 
@@ -38,7 +38,7 @@ def save_authorized_users():
 
 load_authorized_users()
 
-ADMIN_ID = 2035010265  
+ADMIN_ID = 2003075069  
 
 async def check_authorization(user_id):
     if user_id not in AUTHORIZED_USERS:
