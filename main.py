@@ -14,7 +14,7 @@ import sys
 logging.basicConfig(level=logging.INFO)
 
 
-API_TOKEN = '7330160795:AAGUACDUOyeOPw6d5pel2rNhSUhih259wWY'
+API_TOKEN = '7356724235:AAF2m9hW9eIenVzvC4MDLtjORwmzvPaGgsw'
 
 AUTHORIZED_USERS = {}
 
@@ -140,7 +140,7 @@ async def user_info(message: Message):
         else:
             approval_expiry_str = "Not approved"
     else:
-        approval_expiry_str = "𝙊𝙥𝙥𝙨 𝙉𝙤𝙩 𝙖𝙥𝙥𝙧𝙤𝙫𝙚𝙙 𝘾𝙤𝙣𝙩𝙖𝙘𝙩  @anjaneyddos"
+        approval_expiry_str = "𝙊𝙥𝙥𝙨 𝙉𝙤𝙩 𝙖𝙥𝙥𝙧𝙤𝙫𝙚𝙙 𝘾𝙤𝙣𝙩𝙖𝙘𝙩  @Omegarazz"
 
     username = message.from_user.username
     await message.answer(f"🔖 𝙍𝙤𝙡𝙚: 𝙐𝙨𝙚𝙧\n"
@@ -152,7 +152,7 @@ attack_process = None
 last_attack_time = 0
 async def welcome_user(message: Message):
     if not await check_authorization(message.from_user.id):
-        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @anjaneyddos 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
+        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @Omegarazz 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
         return
 
     await message.answer(f"𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝘽𝙂𝙈𝙄 𝘼𝙩𝙩𝙖𝙘𝙠 𝘽𝙤𝙩! 🚀\n\n"
@@ -167,10 +167,10 @@ LAST_ATTACK_TIME = {}
 
 async def bgmi_attack(message: Message):
     if not await check_authorization(message.from_user.id):
-        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @anjaneyddos 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
+        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @Omegarazz 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨")
         return
     if message.from_user.id not in AUTHORIZED_USERS:
-        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @anjaneyddos𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨‌.")
+        await message.answer("𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n 𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @Omegarazz 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨‌.")
         return
 
     current_time = time.time()
