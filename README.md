@@ -1,2 +1,2 @@
 # ddos
-# By Anjaney @anjaneyddos
+# By Omegarazz @Omegarazz
