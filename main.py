@@ -14,7 +14,7 @@ import sys
 logging.basicConfig(level=logging.INFO)
 
 
-API_TOKEN = '7356724235:AAF2m9hW9eIenVzvC4MDLtjORwmzvPaGgsw'
+API_TOKEN = '6998649359:AAGjKYjUKQJsZ1J-IDL7JMrN01z1RpjEuUs'
 
 AUTHORIZED_USERS = {}
 
