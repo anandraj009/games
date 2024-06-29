@@ -175,9 +175,9 @@ async def bgmi_attack(message: Message):
 
     current_time = time.time()
 
-    if message.from_user.id in LAST_ATTACK_TIME and current_time - LAST_ATTACK_TIME[message.from_user.id] < 300:
-        remaining_seconds = 300 - (current_time - LAST_ATTACK_TIME[message.from_user.id])
-        minutes, seconds = divmod(remaining_seconds, 60)
+    if message.from_user.id in LAST_ATTACK_TIME and current_time - LAST_ATTACK_TIME[message.from_user.id] < 50:
+        remaining_seconds = 50 - (current_time - LAST_ATTACK_TIME[message.from_user.id])
+        minutes, seconds = divmod(remaining_seconds, 50)
         time_str = f"{int(minutes)} 𝙢𝙞𝙣𝙪𝙩𝙚𝙨 𝙖𝙣𝙙 {int(seconds)} "
         await message.answer(f"𝙔𝙤𝙪 𝙢𝙪𝙨𝙩 𝙬𝙖𝙞𝙩 {time_str}. 𝙨𝙚𝙘𝙤𝙣𝙙𝙨 𝙗𝙚𝙛𝙤𝙧𝙚 𝙨𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙖𝙣𝙤𝙩𝙝𝙚𝙧 𝙖𝙩𝙩𝙖𝙘𝙠")
         return
